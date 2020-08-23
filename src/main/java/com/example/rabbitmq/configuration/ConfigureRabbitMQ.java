@@ -14,11 +14,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigureRabbitMQ {
 
-    static final String topicExchangeName = "exchangeName";
+    public static final String topicExchangeName = "exchangeName";
 
-    static final String queueName = "queueName";
+    public static final String queueName = "queueName";
 
-    static final String routingKey = "route1.#";
+     public static final String routingKey = "route1.#";
 
     @Bean
     Queue createQueue(){
